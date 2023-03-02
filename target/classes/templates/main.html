@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Three Buttons Example</title>
+</head>
+<body style="background-color:rgb(68, 57, 57);">
+<h1>Click a button to go to a different page:</h1>
+<div>
+    <form th:action="@{/submitteam}" method="get">
+        <button type="submit">Submit team</button><br><br>
+    </form>
+</div>
+<div>
+    <form th:action="@{/viewteams}" method="get">
+        <button type="submit">View teams</button><br><br>
+    </form>
+</div>
+<div>
+    <form th:action="@{/deleteteam}" method="get">
+        <input type="hidden" name="id" value="0"/>
+        <button type="submit">Delete team</button><br><br>
+    </form>
+</div>
+
+<div>
+    <form th:action="@{/submitmatch}" method="get">
+        <button type="submit">Submit match</button><br><br>
+    </form>
+</div>
+<div>
+    <form th:action="@{/viewmatches}" method="get">
+        <button type="submit">View matches</button><br><br>
+    </form>
+</div>
+<div>
+    <form th:action="@{/deletematch}" method="get">
+        <input type="hidden" name="id" value="0"/>
+        <button type="submit">Delete match</button><br><br>
+    </form>
+</div>
+</body>
+</html>

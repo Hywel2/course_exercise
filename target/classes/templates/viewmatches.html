@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Match List</title>
+</head>
+<body style="background-color:rgb(68, 57, 57);">
+<h1>Match List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Home Team</th>
+        <th>Away Team</th>
+        <th>Location</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="match : ${matchList}">
+        <td th:text="${match.id}"></td>
+        <td th:text="${match.homeTeam}"></td>
+        <td th:text="${match.awayTeam}"></td>
+        <td th:text="${match.location}"></td>
+    </tr>
+    </tbody>
+</table>
+<form th:action="@{/main}" th:method="get" id="form">
+    <label>Return to main screen</label>
+    <input type="submit" value="Main">
+</form>
+</body>
+</html>

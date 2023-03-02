@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Match</title>
+</head>
+<body style="background-color:rgb(68, 57, 57);">
+<form th:object="${match}" th:action="@{/addmatch}" th:method="post" id="form">
+    <label for="hometeam">Home Team:</label>
+    <input type="text" id="hometeam" th:field="*{homeTeam}"/><br><br>
+
+    <label for="awayteam">Away Team:</label>
+    <input type="text" id="awayteam" th:field="*{awayTeam}"/><br><br>
+
+    <label for="location">Location:</label>
+    <input type="text" id="location" th:field="*{location}"/><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<form th:action="@{/main}" th:method="get">
+    <label>Return to main screen</label>
+    <input type="submit" value="Main">
+</form>
+</body>
+</html>

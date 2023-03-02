@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Team</title>
+</head>
+<body style="background-color:rgb(68, 57, 57);">
+<form th:action="@{/deleteteam}" th:method="get" id="form">
+    <label>Please type the id you would like to delete:</label>
+    <input type="text" id="id" name="id"/><br><br>
+    <input type="submit" value="Delete"/>
+</form>
+<form th:action="@{/main}" th:method="get">
+    <label>Return to main screen</label>
+    <input type="submit" value="Main">
+</form>
+</body>
+</html>

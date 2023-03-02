@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Team List</title>
+</head>
+<body style="background-color:rgb(68, 57, 57);">
+<h1>Team List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Manager</th>
+        <th>Name</th>
+        <th>Wins</th>
+        <th>Draws</th>
+        <th>Losses</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="team : ${teamList}">
+        <td th:text="${team.id}"></td>
+        <td th:text="${team.manager}"></td>
+        <td th:text="${team.name}"></td>
+        <td th:text="${team.wins}"></td>
+        <td th:text="${team.draws}"></td>
+        <td th:text="${team.losses}"></td>
+    </tr>
+    </tbody>
+</table>
+<form th:action="@{/main}" th:method="get" id="form">
+    <label>Return to main screen</label>
+    <input type="submit" value="Main">
+</form>
+</body>
+</html>

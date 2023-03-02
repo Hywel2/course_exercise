@@ -1,0 +1,9 @@
+org/example/repositories/TeamDao.class
+org/example/repositories/MatchRepository.class
+org/example/services/MatchService.class
+org/example/repositories/MatchDao.class
+org/example/repositories/TeamRepository.class
+org/example/Application.class
+org/example/controllers/MatchController.class
+org/example/services/TeamService.class
+org/example/controllers/TeamController.class
