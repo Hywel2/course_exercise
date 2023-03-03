@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Team List</title>
+    <style>
+        body {
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 <body style="background-color:rgb(68, 57, 57);">
 <h1>Team List</h1>
@@ -28,7 +34,7 @@
         <td th:text="${team.losses}"></td>
     </tr>
     </tbody>
-</table>
+</table><br><br>
 <form th:action="@{/main}" th:method="get" id="form">
     <label>Return to main screen</label>
     <input type="submit" value="Main">

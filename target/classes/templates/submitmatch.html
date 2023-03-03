@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Submit Match</title>
+    <style>
+        body {
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 <body style="background-color:rgb(68, 57, 57);">
 <form th:object="${match}" th:action="@{/addmatch}" th:method="post" id="form">
@@ -17,7 +23,7 @@
     <input type="text" id="location" th:field="*{location}"/><br><br>
 
     <input type="submit" value="Submit">
-</form>
+</form><br><br>
 <form th:action="@{/main}" th:method="get">
     <label>Return to main screen</label>
     <input type="submit" value="Main">

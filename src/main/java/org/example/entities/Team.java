@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 @Table (name = "teams")
 public class Team {
 
-    @Id // <!-- this field is the PK
+    @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private int id;
     private String manager;

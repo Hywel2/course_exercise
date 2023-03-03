@@ -20,7 +20,7 @@ public class TeamRepository implements TeamDao {
 
     @Override
     public List<Team> getTeams() {
-        return entityManager.createQuery("from teams", Team.class).getResultList();
+        return entityManager.createQuery("from Team", Team.class).getResultList();
     }
 
     @Override

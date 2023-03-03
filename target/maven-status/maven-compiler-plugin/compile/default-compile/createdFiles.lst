@@ -1,4 +1,6 @@
 org/example/repositories/TeamDao.class
+org/example/entities/Team.class
+org/example/entities/Match.class
 org/example/repositories/MatchRepository.class
 org/example/services/MatchService.class
 org/example/repositories/MatchDao.class

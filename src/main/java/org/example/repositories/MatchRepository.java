@@ -20,7 +20,7 @@ public class MatchRepository implements MatchDao {
 
     @Override
     public List<Match> getMatches() {
-        return entityManager.createQuery("from matches", Match.class).getResultList();
+        return entityManager.createQuery("from Match", Match.class).getResultList();
     }
 
     @Override

@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Submit Team</title>
+    <style>
+        body {
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
 <body style="background-color:rgb(68, 57, 57);">
 <form th:object="${team}" th:action="@{/addteam}" th:method="post" id="form">
@@ -23,7 +29,7 @@
     <input type="number" id="losses" th:field="*{losses}"/><br><br>
 
     <input type="submit" value="Submit">
-</form>
+</form><br><br>
 <form th:action="@{/main}" th:method="get">
     <label>Return to main screen</label>
     <input type="submit" value="Main">
